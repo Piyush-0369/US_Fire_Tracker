@@ -1,0 +1,27 @@
+/* Page wrapper */
+.maps-page {
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Map container (outer frame) */
+.map-wrapper {
+  width: 100%;
+  height: 80vh;                        /* ✅ REQUIRED for proper map display */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  border-left: 6px solid var(--green-primary);
+  margin-top: 20px;
+}
+
+/* Actual Leaflet map */
+.leaflet-map {
+  width: 100%;
+  height: 100%;                         /* ✅ REQUIRED */
+}
+
+/* Fix for map tiles snapping / white lines */
+.leaflet-container {
+  background: #e6e6e6;
+}
